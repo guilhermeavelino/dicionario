@@ -1,0 +1,20 @@
+<h1>Edit term</h1>
+
+    <%= form_for(@term) do |f| %>
+
+      <%= f.label :word %>
+      <%= f.text_field :word %>
+
+      <%= f.label :definition %>
+      <%= f.text_field :definition %>
+
+      <%= f.label :link %>
+      <%= f.text_field  :link %>
+
+      <%= f.label :quote %>
+      <%= f.text_field :quote %>
+
+      <%= f.submit "Update" %>
+    <% end %>
+  </div>
+</div>

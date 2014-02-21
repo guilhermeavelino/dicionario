@@ -1,0 +1,7 @@
+    <% @terms.each do |t| %>
+    <%= t.word %></br>
+    <%= t.definition %></br>
+    <%= link_to 'apagar', t, method: :delete, data: {confirm: 'are you sure?'} %>
+    <%= link_to 'editar', edit_term_path(t) %>
+    <hr>
+    <% end%>

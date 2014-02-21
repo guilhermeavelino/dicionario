@@ -1,8 +1,5 @@
 Dicionario::Application.routes.draw do
-  get "terms/new"
-  get "terms", to: 'terms#index'
-  post "terms", to: 'terms#create'
-  get "terms/:id/show", to:'terms#show', as: 'term'
+  resources :terms
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
