@@ -2,19 +2,30 @@
 
     <%= form_for(@term) do |f| %>
 
-      <%= f.label :word %>
-      <%= f.text_field :word %>
+      <div class="field">  
+        <%= f.label :word %></br>
+        <%= f.text_field :word %>
+      </div>
+      
+      <div class="field">  
+        <%= f.label :definition %></br>
+        <%= f.text_field :definition %>
+      </div>
 
-      <%= f.label :definition %>
-      <%= f.text_field :definition %>
+      <div class="field">  
+        <%= f.label :link %></br>
+        <%= f.text_field  :link %>
+      </div>
 
-      <%= f.label :link %>
-      <%= f.text_field  :link %>
+      <div class="field">  
+        <%= f.label :quote %></br>
+        <%= f.text_field :quote %>
+      </div>
 
-      <%= f.label :quote %>
-      <%= f.text_field :quote %>
 
-      <%= f.submit "Update" %>
+      <div class="actions"> 
+        <%= f.submit "Update" %>
+      </div>
     <% end %>
   </div>
 </div>
